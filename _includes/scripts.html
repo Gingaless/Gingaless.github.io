@@ -33,6 +33,7 @@
 // http://docs.mathjax.org/en/latest/upgrading/v2.html
 MathJax = {
   tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']]
       tags: "{{ site.mathjax.tags | default: 'ams' }}"    // eq numbering options: none, ams, all
   },
   options: {
