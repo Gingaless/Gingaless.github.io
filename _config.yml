@@ -34,7 +34,7 @@ google_fonts:
     weights: "400,400i,700,700i"
   - name: "Lora"
     weights: "400,400i,700,700i"
-google_analytics: # Google Analytics id, e.g. "UA-158789327-1"
+google_analytics: "UA-158789327-1" # Google Analytics id, e.g. 
 disqus:
   shortname: "gingaless-github-io" # Disqus shortname, e.g. "my_disqus_shortname"
 twitter:
