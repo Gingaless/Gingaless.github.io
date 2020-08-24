@@ -1,7 +1,7 @@
 ---
 
 title: "JS 발산(Jensen-Shannon Divergence)"
-categories: [ML]
+categories: ML
 date: 2020-02-25 14:40:00 +0000
 use_math: true
 published: true

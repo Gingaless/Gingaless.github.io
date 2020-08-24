@@ -2,7 +2,7 @@
 
 title: "깁스 부등식(Gibbs' Inequality)"
 date: 2020-02-24 14:08:00 +0000
-categories: [ML]
+categories: ML
 comments: true
 published: true
 

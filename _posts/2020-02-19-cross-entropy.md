@@ -2,7 +2,7 @@
 
 title: "크로스 엔트로피(Cross-entropy)와 쿨백-라이블러 발산(KL Divergence)"
 date: 2020-02-19 14:38:00 +0000
-categories: [ML]
+categories: ML
 comments: true
 use_math: true
 published: true

@@ -20,7 +20,7 @@ skin: "/assets/css/skins/default.css"
 locale: ko-KR
 title: "저장용"
 description: ""
-baseurl: "/blog" # the subpath of your site, e.g. "/blog"
+baseurl: "" # the subpath of your site, e.g. "/blog"
 url: "https://Gingaless.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 logo: # path of site logo, e.g. "/images/logo.png"
 date_format: "%B %-d, %Y"
@@ -46,7 +46,7 @@ liquid:
   error_mode: strict
 
 # Build settings
-#permalink: /:categories/:title/
+permalink: /:categories/:title/
 markdown: kramdown
 feed:
   path: atom.xml
