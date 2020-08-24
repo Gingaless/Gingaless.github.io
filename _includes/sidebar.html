@@ -1,0 +1,25 @@
+{% if site.data.sidebar %}
+  <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+  
+  <!-- Toggleable sidebar -->
+  <div class="sidebar" id="sidebar">
+    <div class="sidebar-item">
+      <p>Side Bar</p>
+    </div>
+    
+  
+    <nav class="sidebar-nav">
+      {%- for link in site.data.sidebar -%}
+        {%- if link.url contains '://' -%}
+          {%- assign url = link.url -%}
+        {%- else -%}
+          {%- assign url = link.url | relative_url -%}
+        {%- endif -%}
+        <a class="side-nav-item active" href="{{ url }}">{{ link.title }}</a>
+      {%- endfor -%}
+    </nav>
+  </div>
+  
+ <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+  
+{% endif %}

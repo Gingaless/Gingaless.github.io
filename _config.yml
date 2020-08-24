@@ -59,8 +59,8 @@ paginate_path: /page:num/
 search_full_content: false # can have performance implications for large sites
 
 # Taxonomy pages
-# category_archive_path: "/categories/#"
-# tag_archive_path: "/tags/#"
+category_archive_path: "/categories/#"
+tag_archive_path: "/tags/#"
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -88,11 +88,12 @@ defaults:
       type: posts
     values:
       layout: post
+      comments: true
       share: true
 
 # Site Author
 author:
-  name:
+  name: Gingaless
   picture:
   email:
   twitter:
