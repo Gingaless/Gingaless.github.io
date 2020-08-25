@@ -4,19 +4,19 @@
   <!-- Toggleable sidebar -->
   <div class="sidebar" id="sidebar">
     <div class="sidebar-item">
-      <p>Side Bar</p>
+      <p>Menu</p>
     </div>
     
   
     <nav class="sidebar-nav">
-      {%- for link in site.data.sidebar -%}
-        {%- if link.url contains '://' -%}
-          {%- assign url = link.url -%}
-        {%- else -%}
-          {%- assign url = link.url | relative_url -%}
-        {%- endif -%}
-        <a class="side-nav-item active" href="{{ url }}">{{ link.title }}</a>
-      {%- endfor -%}
+      {% for link in site.data.sidebar %}
+        {% if link.url contains '://' %}
+          {% assign url = link.url %}
+        {% else %}
+          {% assign url = link.url | relative_url %}
+        {% endif %}
+        <a class="sidebar-nav-item active" href="{{ url }}">{{ link.title }}</a>
+      {% endfor %}
     </nav>
   </div>
   
