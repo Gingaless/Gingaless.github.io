@@ -8,7 +8,7 @@
     
     if(!checkbox.checked ||
         sidebar.contains(target) ||
-        (target === checkbox || target === togle)) return;
+        (target === checkbox || target === toggle)) return;
         
     checkbox.checked = false;
     } false);
