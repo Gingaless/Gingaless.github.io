@@ -1,0 +1,6 @@
+{% assign category_title = include.category_name %}
+{% for page in site.pages %}
+  {% if page.taxonomy == include.category_name %}
+    {% assign category_title = page.title %}
+  {% endif %}
+{% endfor %}
