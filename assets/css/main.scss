@@ -6,3 +6,190 @@ sitemap: false
 @charset "utf-8";
 
 @import "so-simple";
+
+
+html {
+  font-size: 16px; // change to whatever
+  
+  @include breakpoint($medium) {
+    font-size: 18px; // change to whatever
+  }
+
+  @include breakpoint($large) {
+    font-size: 20px; // change to whatever
+  }
+}
+
+.highlight {
+  font-family: monospace;
+  font-size: 100%;
+}
+
+.language-plaintext {
+  font-family: monospace;
+  font-size: 100%;
+  background: #c0ffee;
+}
+
+.theorem {
+
+    display: block;
+
+    margin: 13px 0;
+
+    font-style: italic;
+    
+    line-height: 175%;
+
+}
+
+.theorem:before {
+
+    content: "Theorem " attr(caption) ". ";
+
+    font-weight: bold;
+
+    font-style: normal;
+
+}
+
+.proposition {
+
+    display: block;
+
+    margin: 13px 0;
+
+    font-style: italic;
+    
+    line-height: 175%;
+
+}
+
+.proposition:before {
+
+    content: "Proposition " attr(caption) ". ";
+
+    font-weight: bold;
+
+    font-style: normal;
+
+}
+
+.lemma {
+
+    display: block;
+
+    margin: 13px 0;
+
+    font-style: italic;
+    
+    line-height: 175%;
+
+}
+
+.lemma:before {
+
+    content: "Lemma " attr(caption) ". ";;
+
+    font-weight: bold;
+
+    font-style: normal;
+
+}
+
+.proof {
+
+    display: block;
+
+    margin: 13px 0;
+
+    font-style: normal;
+    
+    line-height: 175%;
+
+}
+
+.proof:before {
+
+    content: "Proof.";
+    
+    font-weight: bold;
+
+    font-style: italic;
+
+}
+
+.proof:after {
+
+    content: "\25FC";
+
+    float:right;
+
+}
+
+.algorithm {
+
+    display: block;
+    
+    margin: 14px 0;
+    
+    font-style: normal;
+    
+    line-height: 175%;
+    
+}
+
+.algorithm:before {
+
+    display: inline-block;
+
+    content: "Algorithm" attr(caption);
+    
+    width: 100%;
+    
+    border-top: 1px solid black;
+    
+    border-bottom: 1px solid black;
+    
+    font-weight: bold;
+    
+    //white-space: pre;
+    
+}
+
+.algorithm:after {
+
+    display: inline-block;
+    
+    content: "\a";
+    
+    width: 100%;
+    
+    border-bottom: 1px solid black;
+    
+    //white-space: pre;
+    
+}
+
+.definition {
+
+    display: block;
+
+    margin: 13px 0;
+
+    font-style: normal;
+    
+    line-height: 175%;
+
+}
+
+.definition:before {
+
+    content: "Definition " attr(caption) ". ";
+
+    font-weight: bold;
+
+    font-style: normal;
+
+}
+

@@ -15,10 +15,10 @@ published: true
 깁스 부등식의 내용은 다음과 같다.
 
 $$
--\sum _{x \in \chi} p(x) \log p(x) \leq -\sum _{x \in \chi} p(x) \log q(x),\, p, q \text{는 확률분포함수, } \chi = supp(p), \, supp(f) \text{는 함수 f의 값이 0이 아닌 정의역의 부분집합}
-\\
-\text{또한, 등호는 오직 모든 $x \in \chi$에 대하여 } p(x) = q(x) \text{일 때에만 성립한다.}
-$$
+-\sum _{x \in \chi} p(x) \log p(x) \leq -\sum _{x \in \chi} p(x) \log q(x)
+$$, 
+$$p$$, $$q$$는 확률분포함수, $$\chi = supp(p)$$, $$supp(f)$$는 함수 f의 값이 0이 아닌 정의역의 부분집합.
+또한, 등호는 오직 모든 $$x \in \chi$$에 대하여 $$p(x) = q(x)$$ 일 때에만 성립한다.
 
 깁스 부등식에서 좌변을 우변으로 넘기면 'KLD는 항상 0보다 크거나 같으며 등호는 두 확률분포가 같을 때에만 성립한다.'가 된다.
 
